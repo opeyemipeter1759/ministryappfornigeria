@@ -4,7 +4,7 @@ import Ministries from './Components/ministries/ministries.component'
 function App() {
   return (
     <div className="App">
-      <h1 className="header text-center m-4">Ministries and Federal Parastatals</h1>
+      <h2 className="text-center header m-4">Ministries and Federal Parastatals</h2>
       <Ministries/>
     </div>
   );
