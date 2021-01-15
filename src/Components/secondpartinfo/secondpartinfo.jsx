@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import emblem1 from '../../images/emblem1.png'
+// import emblem1 from '../../images/emblem1.png'
 import ShowMoreText from 'react-show-more-text';
 
 
