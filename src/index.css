@@ -14,7 +14,7 @@ code {
   font-size: 30px;
 }
 .container {
-  margin-left: 30px !important;
+  margin-left: 40px !important;
 }
 .title-text {
   font-size: 2.4em;
@@ -32,7 +32,7 @@ img {
 .red {
   height: 80px;
   width: 6px;
-  background-color: red;
+  background-color: rgb(148, 0, 0);
 }
 
 .first-info {
@@ -46,8 +46,15 @@ img {
   font-size: 22px;
 }
 
-button {
+.more-info {
   font-size: 18px !important;
-  margin-top: 10px;
+  margin-left: auto;
   margin-right: auto;
+}
+.address {
+  font-size: 18px;
+  margin: 14px 0 14px 0;
+}
+.second-info {
+  /* margin: auto !important; */
 }

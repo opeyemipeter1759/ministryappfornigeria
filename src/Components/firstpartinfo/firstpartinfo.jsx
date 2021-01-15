@@ -16,7 +16,7 @@ class FirstPartInfo extends Component {
     return (
       <div className="container first-info">
         <div className="title row">
-          <span><div className="red mr-3"></div></span>
+          <span><div className="red mr-2"></div></span>
           <div className="">
             <img className="pb-4" src={emblem1} alt="" srcset=""/>
           </div>
@@ -29,7 +29,7 @@ class FirstPartInfo extends Component {
       {this.props.minister} 
     </div>
     <div className="mos"> <strong>Minister of state: </strong> {this.props.minister_state} </div>
-    <button type="button" class="btn text-primary ">  More Info <i class="fas fa-caret-down ml-1"></i> </button>
+    {/* <button type="button" class="btn text-primary ">  More Info <i class="fas fa-caret-down ml-1"></i> </button> */}
     
         
       </div>
