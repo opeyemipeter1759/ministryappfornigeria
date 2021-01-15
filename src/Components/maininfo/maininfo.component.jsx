@@ -1,6 +1,8 @@
 import React from 'react';
 import FirstPartInfo from '../firstpartinfo/firstpartinfo';
 import SecondPartInfo from '../secondpartinfo/secondpartinfo';
+
+import '../maininfo/maininfo.styles.css'
 class MainInfo extends React.Component {
 
   render() {

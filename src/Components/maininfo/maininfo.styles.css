@@ -1,6 +1,5 @@
 hr {
-  height: 400px;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 400px;
+  margin: 3% 10% 3% 10%;
+  max-width: 80%;
+  border-top: 3px solid #8c8b8b;
 }
