@@ -38,3 +38,16 @@ img {
 .first-info {
   margin-top: 70px;
 }
+
+.minister {
+  font-size: 22px;
+}
+.mos {
+  font-size: 22px;
+}
+
+button {
+  font-size: 18px !important;
+  margin-top: 10px;
+  margin-right: auto;
+}

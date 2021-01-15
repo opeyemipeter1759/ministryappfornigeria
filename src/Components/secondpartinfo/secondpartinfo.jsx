@@ -1,37 +1,35 @@
 import React, { Component } from 'react'
-import emblem from '../../images/emblem.png'
+import emblem1 from '../../images/emblem1.png'
 
 class SecondPartInfo extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="first-info">
-        <div className="title">
-          <img src={emblem} alt="" srcset=""/>
-    <h2>{this.props.name} </h2>
-    <p> <strong>Minister: </strong> {this.props.minister} </p>
-    <p> Address: <br/> {this.props.address} </p>
+      <div className="container first-info">
+            <div className="title row">
+                <span><div className="red mr-3"></div></span>
+                <div className="">
+                  <img className="pb-4" src={emblem1} alt="" srcset=""/>
+                </div>
+                <div className="col-md-5 col-sm-8 col-9 ">
+                  <h2 className="title-text">{this.props.name} </h2>
+                </div>
+                </div>
+                <div className="minister"> 
+                  <strong>Minister: </strong>
+                  {this.props.minister}
+                </div>
+           
+    <p> Address: </p>
+      <div className="address">
+       {this.props.address}
+      </div>
     <p> Web: {this.props.web} </p>
 
     <button type="button" class="btn text-primary">  More Info <i class="fas fa-caret-up ml-1"></i> </button>
     
-    {/* {this.state.isUp = false ?
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" onClick={() => {
-      this.state.isUp = !this.state.isUp
-      console.log(this.state.isUp)
-      }}>
-    Dropdown
-      {this.state.up}
-    </button>
-    : <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" onClick={() => {
-      this.state.isUp = !this.state.isUp
-      console.log(this.state.isUp)
-      }}>Dropdown
-      {this.state.down}
-      </button>} */}
-        </div>
+    
       </div>
-      </div>
+      
     )
   }
 }

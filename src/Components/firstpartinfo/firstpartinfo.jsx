@@ -24,9 +24,12 @@ class FirstPartInfo extends Component {
             <h2 className="title-text">{this.props.name} </h2>
           </div>
         </div>
-    <p className="minister"> <strong>Minister: </strong> {this.props.minister} </p>
-    <p> <strong>Minister of state: </strong> {this.props.minister_state} </p>
-    <button type="button" class="btn text-primary">  More Info <i class="fas fa-caret-down ml-1"></i> </button>
+    <div className="minister"> 
+      <strong>Minister: </strong> 
+      {this.props.minister} 
+    </div>
+    <div className="mos"> <strong>Minister of state: </strong> {this.props.minister_state} </div>
+    <button type="button" class="btn text-primary ">  More Info <i class="fas fa-caret-down ml-1"></i> </button>
     
         
       </div>

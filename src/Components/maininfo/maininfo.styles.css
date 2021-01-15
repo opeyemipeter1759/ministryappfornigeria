@@ -1,5 +1,10 @@
+@media screen and (max-width: 800px) {
+  hr {
+    margin: 3% 10% 3% 10%;
+    max-width: 80%;
+    border-top: 3px solid #8c8b8b;
+  }
+}
 hr {
-  margin: 3% 10% 3% 10%;
-  max-width: 80%;
   border-top: 3px solid #8c8b8b;
 }
