@@ -8,14 +8,17 @@ import axios from 'axios'
     super(props)
   
     this.state = {
-       data: []
+       data: [],
+       isLoading: false,
     }
   }
   
   componentDidMount(){
+    this.setState({isLoading: true})
 axios.get('https://ministries.herokuapp.com/ministries/?format=json').then(result =>{
   this.setState({
-    data: result.data
+    data: result.data,
+    isLoading: false
   })
 
 })
@@ -25,10 +28,14 @@ axios.get('https://ministries.herokuapp.com/ministries/?format=json').then(resul
 
 
   render() {
-    const { data } = this.state
+    const { data, isLoading } = this.state
     return (
       <div>
-      
+        {
+          isLoading === true ? "Loading..."
+        
+      :
+      <>
        {
          data.map(item => (
           <MainInfo
@@ -38,6 +45,8 @@ axios.get('https://ministries.herokuapp.com/ministries/?format=json').then(resul
           />
          ))
        }
+       </>
+      }
       </div>
     )
   }

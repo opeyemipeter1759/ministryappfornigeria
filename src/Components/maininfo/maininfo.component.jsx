@@ -8,6 +8,7 @@ class MainInfo extends React.Component {
   render() {
     return (
       <div>
+      
       <FirstPartInfo
         name= {this.props.item.name}
         minister ={this.props.item.minister}
@@ -20,6 +21,7 @@ class MainInfo extends React.Component {
         web = {this.props.item.website}
         />
         <hr/>
+      
       </div>
     )
   }
