@@ -45,7 +45,7 @@ class App extends React.Component {
       }).then(res => {
         console.log(res)
         this.setState({
-          message: <h3 className="container text-center bg-color"> A new ministry has been created, Kindly reload the page to the view the ministry added.</h3>          
+          message: <h4 className="container text-center bg-color mt-2"> A new ministry has been created, Kindly reload the page to  view the ministry added.</h4>          
         })
         this.handleModalShowHide()
         
