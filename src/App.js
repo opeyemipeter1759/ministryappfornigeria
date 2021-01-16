@@ -80,7 +80,6 @@ class App extends React.Component {
                               <label for="name">Name:</label>
                               <input type="name" 
                               class="form-control" 
-                              placeholder="Name" 
                               name="name" 
                               onChange={this.handleChange} 
                               value={this.state.name}/>
