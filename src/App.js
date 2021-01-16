@@ -45,12 +45,14 @@ class App extends React.Component {
       }).then(res => {
         console.log(res)
         this.setState({
-          message: <p className ="container">
-          A new ministry has been created, Kindly reload the page. </p>          
+          message: <h3 className="container text-center"> A new ministry has been created, Kindly reload the page to the view the ministry added.</h3>          
         })
         this.handleModalShowHide()
         
       }).catch(error => {
+        this.setState({
+          message: " An Error has been made."           
+        })
         console.log(error)
       })
     }
@@ -142,7 +144,7 @@ class App extends React.Component {
                 </Modal>
 
             </div>
-      
+   {this.state.message !== "" && <div>{this.state.message}</div> }
       <Ministries/>
     </div>
    )
