@@ -51,3 +51,7 @@ img {
 .second-info {
   /* margin: auto !important; */
 }
+
+.bg-color {
+  background-color: bisque;
+}
