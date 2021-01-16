@@ -136,7 +136,7 @@ class App extends React.Component {
                     <Button variant="secondary" onClick={() => this.handleModalShowHide()}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={this.handleSubmit}>
+                    <Button variant="success" onClick={this.handleSubmit}>
                         Create
                     </Button>
                     </Modal.Footer>
