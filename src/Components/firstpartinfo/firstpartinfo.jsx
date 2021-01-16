@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import emblem from '../../images/emblem.png'
 
 class FirstPartInfo extends Component {
-  constructor(props) {
-    super(props)
   
-   
-  }
   
   render() {
     return (
