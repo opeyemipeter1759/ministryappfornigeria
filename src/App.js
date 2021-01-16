@@ -14,7 +14,8 @@ class App extends React.Component {
             minister_state: "",
             origin: "",
             address: "",
-            website: ""
+            website: "",
+            message:""
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -43,7 +44,12 @@ class App extends React.Component {
 
       }).then(res => {
         console.log(res)
+        this.setState({
+          message: <p className ="container">
+          A new ministry has been created, Kindly reload the page. </p>          
+        })
         this.handleModalShowHide()
+        
       }).catch(error => {
         console.log(error)
       })
@@ -56,11 +62,11 @@ class App extends React.Component {
       <div >
       <h2 className="text-center header m-4">Ministries and Federal Parastatals</h2>
       </div>
-      <div className="text-center">
-        <Button variant="success ml-4" onClick={() => this.handleModalShowHide()}>
+       <div className="text-center">
+         <Button variant="success ml-4" onClick={() => this.handleModalShowHide()}>
                    Add New Ministry
-                </Button>
-      </div>
+                </Button> </div>
+       
         <div>
                 <Modal show={this.state.showHide}>
                     <Modal.Header closeButton onClick={() => this.handleModalShowHide()}>

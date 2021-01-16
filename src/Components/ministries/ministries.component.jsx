@@ -32,10 +32,10 @@ axios.get('https://ministries.herokuapp.com/ministries/?format=json').then(resul
     return (
       <div>
         {
-          isLoading === true ? "Loading..."
+          isLoading === true ? <em className=" container display-4">Loading...</em>
         
       :
-      <>
+      <p>
        {
          data.map(item => (
           <MainInfo
@@ -45,7 +45,7 @@ axios.get('https://ministries.herokuapp.com/ministries/?format=json').then(resul
           />
          ))
        }
-       </>
+       </p>
       }
       </div>
     )

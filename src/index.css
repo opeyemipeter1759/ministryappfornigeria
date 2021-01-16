@@ -14,29 +14,23 @@ code {
   font-size: 30px;
 }
 .container {
-  margin-left: 40px !important;
+  /* margin-left: 40px !important; */
 }
 .title-text {
-  font-size: 2.4em;
+  font-size: 2.2em;
   margin-left: auto;
 }
 img {
   width: 90px;
-  padding-bottom: 50px;
 }
 @media screen and (max-width: 800px) {
   .title-text {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
-}
-.red {
-  height: 80px;
-  width: 6px;
-  background-color: rgb(148, 0, 0);
 }
 
 .first-info {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .minister {
@@ -48,7 +42,6 @@ img {
 
 .more-info {
   font-size: 18px !important;
-  margin-left: auto;
   margin-right: auto;
 }
 .address {
