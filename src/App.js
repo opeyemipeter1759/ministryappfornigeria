@@ -138,7 +138,7 @@ class App extends React.Component {
                         Close
                     </Button>
                     <Button variant="primary" onClick={this.handleSubmit}>
-                        Save Changes
+                        Create
                     </Button>
                     </Modal.Footer>
                 </Modal>
